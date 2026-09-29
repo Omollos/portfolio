@@ -1,22 +1,24 @@
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 8%;
-    background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
 }
 
-nav h2 {
-    font-size: 1.2rem;
+.logo {
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
-nav div:last-child {
-    display: flex;
-    gap: 25px;
+.nav-links {
+  display: flex;
+  gap: 25px;
 }
 
-nav a:hover {
-    text-decoration: underline;
+.nav-links a:hover {
+  text-decoration: underline;
 }
 
 #home {
@@ -235,4 +237,29 @@ nav a:hover {
 #contact a:hover {
   background: #1f2937;
   color: white;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  #home h1 {
+    font-size: 3rem;
+  }
+
+  #home h2 {
+    font-size: 1.5rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
 }
