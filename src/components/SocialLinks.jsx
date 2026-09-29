@@ -1,22 +1,30 @@
 function SocialLinks() {
   return (
-    <div className="social-links">
-      <a href="#" target="_blank" rel="noreferrer">
-        LinkedIn
-      </a>
+    <footer className="social-links">
+      <p>Find me online</p>
 
-      <a href="#" target="_blank" rel="noreferrer">
-        GitHub
-      </a>
+      <div className="social-links-list">
+        <a href="#" target="_blank" rel="noreferrer">
+          LinkedIn
+        </a>
 
-      <a href="#" target="_blank" rel="noreferrer">
-        Dev.to
-      </a>
+        <a href="#" target="_blank" rel="noreferrer">
+          GitHub
+        </a>
 
-      <a href="#" target="_blank" rel="noreferrer">
-        X
-      </a>
-    </div>
+        <a href="#" target="_blank" rel="noreferrer">
+          Dev.to
+        </a>
+
+        <a href="#" target="_blank" rel="noreferrer">
+          X
+        </a>
+      </div>
+
+      <p className="copyright">
+        © 2026 Steve Omollo. All rights reserved.
+      </p>
+    </footer>
   )
 }
 

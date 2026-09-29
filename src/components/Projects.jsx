@@ -21,6 +21,13 @@ function Projects() {
           github="https://github.com/Omollos/loba"
           demo="https://loba-six.vercel.app"
         />
+
+        <ProjectCard
+          type="Development Project"
+          title="Lem-in"
+          description="A Go-based pathfinding project that parses an ant colony and calculates efficient, non-overlapping paths through a network."
+          technologies={['Go', 'Algorithms', 'BFS']}
+        />
       </div>
     </section>
   )
