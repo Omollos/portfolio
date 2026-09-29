@@ -150,3 +150,89 @@ nav a:hover {
   font-size: 1.5rem;
   margin-bottom: 15px;
 }
+
+#hobbies {
+  padding: 100px 8%;
+}
+
+#hobbies h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.hobbies-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.hobbies-list span {
+  padding: 10px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 20px;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+  padding: 40px 8%;
+  background: white;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+#resume {
+  padding: 100px 8%;
+  background: white;
+}
+
+#resume h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+#resume p {
+  margin-bottom: 25px;
+  line-height: 1.7;
+}
+
+#resume a {
+  display: inline-block;
+  padding: 12px 20px;
+  border: 1px solid #1f2937;
+  border-radius: 6px;
+}
+
+#resume a:hover {
+  background: #1f2937;
+  color: white;
+}
+
+#contact {
+  padding: 100px 8%;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+#contact p {
+  max-width: 600px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+#contact a {
+  display: inline-block;
+  padding: 12px 20px;
+  border: 1px solid #1f2937;
+  border-radius: 6px;
+}
+
+#contact a:hover {
+  background: #1f2937;
+  color: white;
+}
