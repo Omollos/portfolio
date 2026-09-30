@@ -376,6 +376,14 @@ section {
   background: var(--background);
   border: 1px solid var(--border);
   border-radius: 10px;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.article-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
 }
 
 .article-status {
@@ -391,8 +399,35 @@ section {
   font-size: 1.5rem;
 }
 
-.article-card p:last-child {
+.article-card p:last-of-type {
+  margin-bottom: 20px;
   line-height: 1.8;
+}
+
+.article-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.article-tags span {
+  padding: 5px 10px;
+  background: #f3f4f6;
+  border-radius: 4px;
+  color: #4b5563;
+  font-size: 0.85rem;
+}
+
+.article-card a {
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.article-card a:hover {
+  color: var(--accent-dark);
+  text-decoration: underline;
 }
 
 /* Hobbies */
