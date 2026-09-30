@@ -22,7 +22,7 @@ function SocialLinks() {
       </div>
 
       <p className="copyright">
-        © 2026 Steve Omollo. All rights reserved.
+        © {new Date().getFullYear()} Steve Omollo. All rights reserved.
       </p>
     </footer>
   )

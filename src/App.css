@@ -18,6 +18,7 @@ body {
 section {
   max-width: 1100px;
   margin: 0 auto;
+  scroll-margin-top: 90px;
 }
 
 h1,
@@ -58,11 +59,33 @@ nav {
 }
 
 .nav-links a {
+  position: relative;
   color: var(--muted);
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  transition: width 0.2s ease;
 }
 
 .nav-links a:hover {
   color: var(--text);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+section {
+  max-width: 1100px;
+  margin: 0 auto;
+  scroll-margin-top: 90px;
 }
 
 /* Hero */
@@ -130,6 +153,16 @@ nav {
   color: white;
 }
 
+.hero-buttons a {
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.hero-buttons a:hover {
+  transform: translateY(-2px);
+}
+
 .hero-buttons a:first-child:hover {
   background: var(--accent-dark);
 }
@@ -145,13 +178,15 @@ nav {
 .hero-image img {
   width: 320px;
   height: 320px;
-
   object-fit: cover;
-
   border-radius: 50%;
   border: 6px solid white;
-
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.hero-image img:hover {
+  transform: scale(1.03);
 }
 
 /* Sections */
@@ -207,20 +242,19 @@ nav {
 
 .project-card {
   padding: 30px;
-
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 10px;
-
   transition:
     transform 0.2s ease,
-    box-shadow 0.2s ease;
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .project-card:hover {
   transform: translateY(-4px);
-
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  border-color: var(--accent);
 }
 
 .project-header {
@@ -277,10 +311,20 @@ nav {
   line-height: 1.7;
 }
 
-.project-technologies {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+.project-technologies span {
+  padding: 5px 10px;
+  background: #f3f4f6;
+  border-radius: 4px;
+  color: #4b5563;
+  font-size: 0.85rem;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.project-technologies span:hover {
+  background: var(--accent);
+  color: white;
 }
 
 .project-technologies span {
@@ -309,9 +353,15 @@ nav {
   font-weight: 600;
 }
 
+.project-links a {
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
 .project-links a:hover {
   color: var(--accent-dark);
-  text-decoration: underline;
+  transform: translateX(3px);
 }
 
 /* Articles */
