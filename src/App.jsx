@@ -8,6 +8,7 @@ import Hobbies from './components/Hobbies'
 import SocialLinks from './components/SocialLinks'
 import Resume from './components/Resume'
 import Contact from './components/Contact'
+import Skills from './components/Skills'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Hero />
       <About />
       <Projects />
+      <Skills />
       <Articles />
       <Hobbies />
       <Resume />
