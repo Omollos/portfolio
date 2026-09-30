@@ -28,7 +28,11 @@ function SocialLinks() {
   Dev.to
 </a>
 
-<a href="#" target="_blank" rel="noreferrer">
+<a
+  href="https://x.com/SteveOmoll79733"
+  target="_blank"
+  rel="noreferrer"
+>
   X
 </a>
       </div>
