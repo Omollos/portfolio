@@ -4,21 +4,33 @@ function SocialLinks() {
       <p>Find me online</p>
 
       <div className="social-links-list">
-        <a href="#" target="_blank" rel="noreferrer">
-          LinkedIn
-        </a>
+        <a
+  href="https://www.linkedin.com/in/steve-omollo"
+  target="_blank"
+  rel="noreferrer"
+>
+  LinkedIn
+</a>
 
-        <a href="#" target="_blank" rel="noreferrer">
-          GitHub
-        </a>
+<a
+  href="https://github.com/Omollos"
+  target="_blank"
+  rel="noreferrer"
+>
+  GitHub
+</a>
 
-        <a href="#" target="_blank" rel="noreferrer">
-          Dev.to
-        </a>
+<a
+  href="https://dev.to/steve_omollo"
+  target="_blank"
+  rel="noreferrer"
+>
+  Dev.to
+</a>
 
-        <a href="#" target="_blank" rel="noreferrer">
-          X
-        </a>
+<a href="#" target="_blank" rel="noreferrer">
+  X
+</a>
       </div>
 
       <p className="copyright">
